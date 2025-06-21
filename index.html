@@ -1,15 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exclusive</title>
-  </head>
-  <body>
-    <div id="app">
-      hello
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exclusive</title>
+</head>
+
+<body>
+  <!--top header with promotional message and shop now button-->
+  <section class="top-header">
+    <div
+      class="w-full h-auto flex flex-col sm:flex-row justify-center items-center px-4 py-2 bg-black gap-1 sm:gap-3 text-center">
+
+      <span class="text-white text-xxs sm:text-xxs md:text-xxs lg:text-xxs xl:text-xxs 2xl:text-xxs">
+        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+      </span>
+
+      <div class="flex flex-col items-center cursor-pointer group">
+        <span class="text-white text-xxs sm:text-xxs md:text-xxs lg:text-xxs">ShopNow</span>
+        <span class="block h-0.5 bg-white transition-all duration-500 ease-in w-0 group-hover:w-full"></span>
+      </div>
+
     </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  </section>
+
+  <!-- Header Section with Navigation and Search -->
+  <section class="header">
+    <div
+      class="w-full mx-auto flex flex-col sm:flex-row justify-between items-center mt-3 px-4 sm:px-4 md:px-7 lg:px-24 py-3 gap-y-3 sm:gap-y-0 ">
+      <!-- Brand Title -->
+      <p class="text-black font-bold text-2xl">Exclusive</p>
+
+      <!-- Navigation Menu -->
+      <nav class="hidden sm:flex flex-1 justify-center gap-4 md:gap-6 lg:gap-8 ">
+        <a href="#"
+          class="text-black mt-1 text-sm sm:text-sm md:text-md hover:text-blue-500 transition-all underline-slide">Home</a>
+        <a href="#"
+          class="text-black mt-1 text-sm sm:text-sm md:text-md hover:text-blue-500 transition-all underline-slide">Contact</a>
+        <a href="#"
+          class="text-black mt-1 text-sm sm:text-md md:text-sm hover:text-blue-500 transition-all underline-slide">About
+          Us</a>
+        <a href="#"
+          class="text-black mt-1 text-sm sm:text-md md:text-sm hover:text-blue-500 transition-all underline-slide">Sign
+          Up</a>
+      </nav>
+
+      <!-- Search + Icons -->
+      <div class="flex items-center gap-4">
+        <!-- Search Input -->
+        <div class="relative w-[180px] sm:w-[200px] md:w-[240px]">
+          <input type="text" placeholder="What are you looking for?"
+            class="w-full h-8 px-3 pr-10 text-xxs sm:text-xs md:text-sm placeholder:text-xxs sm:placeholder:text-xs md:placeholder:text-sm rounded border bg-gray-200" />
+          <img src="/Assets/search icon.png" alt="search icon"
+            class="w-4 h-4 absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none" />
+        </div>
+
+        <!-- Wishlist Icon -->
+        <div class="relative">
+          <img src="/Assets/Wishlist.png" alt="wishlist icon" class="w-6 h-6 cursor-pointer" />
+          <span
+            class="absolute -top-0.5 -right-0.5 bg-red-500 text-white text-[10px] w-3 h-3 flex items-center justify-center rounded-full">3</span>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="relative">
+          <img src="/Assets/cart icon.png" alt="cart icon" class="w-6 h-6 cursor-pointer" />
+          <span
+            class="absolute -top-0.5 -right-0.5 bg-red-500 text-white text-[10px] w-3 h-3 flex items-center justify-center rounded-full">5</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories with Promotional Slider -->
+  <section class="w-full grid grid-cols-1 md:grid-cols-4 gap-4 px-4 pt-0 pb-6 border-t border-black/30">
+    <!-- Categories -->
+    <div class="md:col-span-1 border-r border-black/30">
+      <ul class="space-y-3 pl-4 sm:pl-6 md:pl-20 mt-7">
+        <li>Woman's Fashion</li>
+        <li>Men's Fashion</li>
+        <li>Electronics</li>
+        <li>Home & Lifestyle</li>
+        <li>Medicine</li>
+        <li>Sports & Outdoor</li>
+        <li>Baby's & Toys</li>
+        <li>Grocery's & Pets</li>
+        <li>Health & Beauty</li>
+      </ul>
+    </div>
+
+    <!--Promotional Slider-->
+    <div class="md:col-span-3">
+      <div class="relative w-full md:w-[892px] h-[330px] bg-neutral-900 flex items-center justify-center ml-6 mt-5">
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
